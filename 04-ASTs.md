@@ -224,15 +224,16 @@ a.  Extend `Exp` with a multiplication operator over integers.  Make sure
     to appropriately extend `prettyPrintExp` and `interpret` as well.
 
 b.  Extend `Exp` with booleans, a comparison operator, and conditionals.
-    More specifically, extend the language with the following constructs:
 
-    ~~~
-    e ::= ... | true | false | e1 < e2 | if e1 else e2 else e3
-    ~~~
+More specifically, for (b), extend the language with the following constructs:
 
-    and extend `prettyPrintExp` and `interpret` with these additional
-    features.  Make sure to test your extensions by writing down
-    expressions that exercise all of these constructs. This will require
-    that you change the type of `interpret` to accurately reflect that
-    the function will produce either a boolean or integer. You can use am
-    algebraic data type to capture this idea!
+~~~
+e ::= ... | true | false | e1 < e2 | if e1 else e2 else e3
+~~~
+
+And extend `prettyPrintExp` and `interpret` with these additional
+features.  Make sure to test your extensions by writing down
+expressions that exercise all of these constructs. This will require
+that you change the type of `interpret` to accurately reflect that
+the function will produce either a boolean or integer. You can use am
+algebraic data type to capture this idea!
