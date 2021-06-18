@@ -142,6 +142,7 @@ implementor, the types greatly constrain what programs might typecheck
 likely behavior of the function in its comment. To do this, describe how the
 function must produce its output in terms of its input.
 
+~~~haskell
 -- TODO: fill me in
 f1 :: a -> b -> a
 
@@ -153,6 +154,7 @@ f3 :: (a -> b) -> (b -> c) -> a -> c
 
 -- TODO: fill me in
 f4 :: (a -> b -> c) -> b -> a -> c
+~~~
 
 In type-directed programming, the structure of our types dictates the design
 of our programs. By leveraging the fact that Haskell has a rich static type
@@ -249,6 +251,7 @@ behavior in its comment. Use holes to guide your way when you get stuck!
 on algebraic data types as necessary.  Note that algebraic data type
 constructors do not usually appear in the completion list when using holes.)
 
+~~~haskell
 f5 :: (a -> Bool) -> (a -> a) -> a -> a
 f5 f g x = undefined
 
@@ -263,3 +266,4 @@ f8 d f x = undefined
 
 f9 :: (a -> Maybe b) -> [a] -> [b]
 f9 f l = undefined
+~~~
